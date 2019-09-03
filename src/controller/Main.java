@@ -6,8 +6,11 @@ import model.MyShape;
 import view.MyWindow;
 
 import javax.swing.*;
+import java.util.ArrayList;
 
 public class Main {
+
+    static ArrayList<MyShape> shapes = new ArrayList<>();
 
     public static void main(String[] args) {
 

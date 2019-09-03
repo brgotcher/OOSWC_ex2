@@ -1,5 +1,8 @@
 package view;
 
+import controller.AddButtonListener;
+import controller.ShowAllButtonListener;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -56,9 +59,19 @@ public class MyWindow extends JFrame {
         buttonPane.add(showAllButton);
         bottomPane.add(buttonPane);
 
+        addButton.addActionListener(new AddButtonListener(this));
+        showAllButton.addActionListener(new ShowAllButtonListener(this));
 
 
         }
+
+    public JTextArea getDisplay() {return display;}
+    public JRadioButton[] getShapeButtons() {return shapeButtons;}
+    public JTextField getxField() {return xField;}
+    public JTextField getyField() {return yField;}
+    public JTextField getv1Field() {return v1Field;}
+    public JTextField getv2Field() {return v2Field;}
+
 
 }
 
