@@ -26,6 +26,6 @@ public class MyRect extends MyShape {
 
     @Override
     public String toString() {
-        return "MyRect[(" + getLocation() + ") w=" + width + " h=" + height + "]";
+        return "MyRect[(" + getLocation() + ") w=" + width + " h=" + height + " area = " + getArea() + "]";
     }
 }

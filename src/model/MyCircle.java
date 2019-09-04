@@ -24,6 +24,6 @@ public class MyCircle  extends MyShape {
 
     @Override // override the toString() in Object
     public String toString() {
-        return "MyCircle[(" + getLocation() + ") radius = " + radius + "]";
+        return "MyCircle[(" + getLocation() + ") radius = " + radius + " area = " + getArea() + "]";
     }
 }
